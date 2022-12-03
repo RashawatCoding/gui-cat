@@ -53,7 +53,7 @@ def sumdata():
 ################################
 GUI = Tk()
 GUI.geometry("600x1000") #ปรับขนาดความกว้าง x ความสูง
-GUI.title("โปรแกรมคำนวณราคาแมว") #ใส่ชื่อโปรแกรม
+GUI.title("โปรแกรมสำหรับแม่ค้าแมว v.0.0.1") #ใส่ชื่อโปรแกรม
 
 file = PhotoImage(file="cat.png")
 IMG = Label(GUI,image=file,text="")
@@ -106,7 +106,8 @@ def SummaryData(event):
 	messagebox.showinfo(title,text)
 
 GUI.bind('<F1>',SummaryData) # ผูกโปรแกรมกับปุ่มบนคีย์บอร์ดเมื่อกดปุ่ม f1 จะ popup ขึ้นมาเพื่อให้สรุปข้อมูลให้เรา
- 
+GUI.bind('<F2>',SummaryData) # ผูกโปรแกรมกับปุ่มบนคีย์บอร์ดเมื่อกดปุ่ม f1 จะ popup ขึ้นมาเพื่อให้สรุปข้อมูลให้เรา
+
 E1.focus() # ให้ curser วิ่งไปที่ช่อง E1
 
 GUI.mainloop() #เพื่อให้ตัว software run ตลอดเวลา
